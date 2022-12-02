@@ -1,0 +1,15 @@
+<div class="container">
+  <form [formGroup]="form" class="login-wrapper" (ngSubmit)="onSubmit()">
+    <div class="input-field">
+      <label>Username:</label>
+      <input type="text" formControlName="username" />
+    </div>
+
+    <div class="input-field">
+      <label>Password:</label>
+      <input type="password" formControlName="password" />
+    </div>
+
+    <button class="submit-button" type="submit">Submit</button>
+  </form>
+</div>
